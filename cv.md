@@ -1,0 +1,1 @@
+<image src="foto.jpg" alt="Суворова Светлана">git
