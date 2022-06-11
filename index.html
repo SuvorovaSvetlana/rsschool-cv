@@ -12,9 +12,111 @@
     <title>CV</title>
 </head>
 <body>
-   <header class="header"></header>
-   <main class="main"></main>
-   <footer class="footer"></footer>
+   <header class="header">
+      <div class="container">
+         <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+              <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+              <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+              <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+            </ul>
+        </nav>
+    </div>
+   </header>
+   <main class="main main-container">
+    <section id="profile">
+      <div class="my-foto">
+       
+      </div>
+      <div class="my-text">
+            <h1 class="section-title">SVETLANA SUVOROVA</h1>
+            <hr>
+            <h2 class="section-title">Junior Frontend Developer</h2>
+      </div>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">contacts</h2>
+        <ul>
+          <li>Phone: +375 29 688 84 17</li>
+          <li>E-mail: suvorova.brs@gmail.com</li>
+          <li>GitHub: SuvorovaSvetlana</li>
+        </ul>
+      </section>
+      <section class="section" id="summary">
+        <h2 class="section-title">summary</h2>
+        <p>As for me, I think the most important thing in life is to find a way to express yourself.
+         Therefore, I continue to learn and develop myself. In different years I graduated from two universities.
+         I am an economist and logistician by education. Now I work in an insurance company as a manager. 
+         I decided to move on and become a full stack developer. I am learning java, c/c++ and Frontend.</p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">skills</h2>
+        <ul>
+          <li>HTML5, CSS5, Bootstrap</li>
+          <li>JavaScript basik</li>
+          <li>Git, GitHub</li>
+          <li>VS Code, Sublime Text3</li>
+          <li>Adobe Photoshop, Figma</li>
+        </ul>
+      </section>
+      <section class="section" id="code">
+        <h2 class="section-title">code</h2>
+        //даны 3 числа, вывести их в порядке возрастания
+let min, max, middle;
+//находим минимум
+if (a<b && a<c) {
+    min = a;
+}else{
+    if (b<a && b<c) {
+        min = b;
+    }else{
+        min = c;
+    }
+}
+//находим максимум
+if (a>b && a>c) {
+    max = a;
+}else{
+    if (b>a && b>c) {
+        max = b;
+    }else{
+        max = c;
+    }
+}
+//находим среднее
+if (a!=max && a!=min) {
+    middle = a;
+}else{
+    if (b!=max && b!=min) {
+        middle = b;
+    }else{
+        middle = c;
+    }
+}
+
+console.log(min + " , " + middle + " , " + max);
+
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title">education</h2>
+        <p>Belarusian Trade and Economic University of Consumer Cooperation</p>
+      </section>
+      <section class="section" id="languages">
+        <h2 class="section-title">languages</h2>
+          <ul>
+            <li>English A2</li>
+            <li>Deutsch A1</li>
+            <li>Russian Nativ</li>
+          </ul>
+      </section>
+    </div>
+   </main>
+   <footer class="footer">
+    <div class="container"></div>
+   </footer>
  
 </body>
 </html>
