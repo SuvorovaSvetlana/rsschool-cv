@@ -26,11 +26,9 @@
         </nav>
     </div>
    </header>
-   <main class="main main-container">
+   <main class="main">
     <section id="profile">
-      <div class="my-foto">
-       
-      </div>
+      <div class="my-foto"></div>
       <div class="my-text">
             <h1 class="section-title">SVETLANA SUVOROVA</h1>
             <hr>
@@ -45,9 +43,14 @@
           <li>GitHub: SuvorovaSvetlana</li>
         </ul>
       </section>
+      <section class="section" id="education">
+        <h2 class="section-title">education</h2>
+        <p>Belarusian Trade and Economic University of Consumer
+             Cooperation</p>
+      </section>
       <section class="section" id="summary">
         <h2 class="section-title">summary</h2>
-        <p>As for me, I think the most important thing in life is to find a way to express yourself.
+        <p>    As for me, I think the most important thing in life is to find a way to express yourself.
          Therefore, I continue to learn and develop myself. In different years I graduated from two universities.
          I am an economist and logistician by education. Now I work in an insurance company as a manager. 
          I decided to move on and become a full stack developer. I am learning java, c/c++ and Frontend.</p>
@@ -56,53 +59,12 @@
         <h2 class="section-title">skills</h2>
         <ul>
           <li>HTML5, CSS5, Bootstrap</li>
+          <li>Java, C/C++</li>
           <li>JavaScript basik</li>
           <li>Git, GitHub</li>
           <li>VS Code, Sublime Text3</li>
           <li>Adobe Photoshop, Figma</li>
         </ul>
-      </section>
-      <section class="section" id="code">
-        <h2 class="section-title">code</h2>
-        //даны 3 числа, вывести их в порядке возрастания
-let min, max, middle;
-//находим минимум
-if (a<b && a<c) {
-    min = a;
-}else{
-    if (b<a && b<c) {
-        min = b;
-    }else{
-        min = c;
-    }
-}
-//находим максимум
-if (a>b && a>c) {
-    max = a;
-}else{
-    if (b>a && b>c) {
-        max = b;
-    }else{
-        max = c;
-    }
-}
-//находим среднее
-if (a!=max && a!=min) {
-    middle = a;
-}else{
-    if (b!=max && b!=min) {
-        middle = b;
-    }else{
-        middle = c;
-    }
-}
-
-console.log(min + " , " + middle + " , " + max);
-
-      </section>
-      <section class="section" id="education">
-        <h2 class="section-title">education</h2>
-        <p>Belarusian Trade and Economic University of Consumer Cooperation</p>
       </section>
       <section class="section" id="languages">
         <h2 class="section-title">languages</h2>
@@ -112,10 +74,59 @@ console.log(min + " , " + middle + " , " + max);
             <li>Russian Nativ</li>
           </ul>
       </section>
-    </div>
+      <section class="section" id="code">
+        <h2 class="section-title">code</h2>
+        <code>
+          <pre class="my-code">
+            //We have 3 numbers, print them in ascending order let min, max, middle;
+            //min
+            if (a<b && a<c) {<br>
+                min = a;
+            }else{
+                if (b<a && b<c){ 
+                    min = b;
+                }else{
+                    min = c;
+                }
+            }
+            //max
+            if (a>b && a>c) {
+                max = a;
+            }else{
+                if (b>a && b>c) {
+                    max = b;
+                }else{
+                    max = c;
+                }
+            }
+            //middle
+            if (a!=max && a!=min) {
+                middle = a;
+            }else{
+                if (b!=max && b!=min) {
+                    middle = b;
+                }else{
+                    middle = c;
+                }
+            }
+            console.log(min + " , " + middle + " , " + max);
+          </pre>
+        </code>
+      </section>
+      
    </main>
    <footer class="footer">
-    <div class="container"></div>
+    <div class="container">
+        <div>
+            <p>2022</p>
+        </div>
+        <div>
+            <a href="#" class="github"></a>
+        </div>
+        <div>
+            <a href="#" class="corse"></a>
+        </div>
+    </div>
    </footer>
  
 </body>
