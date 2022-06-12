@@ -4,10 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
 <body>
-    <img src="foto.jpg" alt="Svetlana Suvorova">
+   <header class="header">
+      <div class="container">
+         <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+              <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+              <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+              <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+            </ul>
+        </nav>
+    </div>
+   </header>
+   <main class="main">
+    <section id="profile">
+      <div class="my-foto"><img src="assets/img/foto.jpg" alt="my-foto"></div>
+      <div class="my-text">
+            <h1 class="section-title">SVETLANA SUVOROVA</h1>
+            <hr>
+            <h2 class="section-title">Junior Frontend Developer</h2>
+      </div>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">contacts</h2>
+        <ul>
+          <li>Phone: +375 29 688 84 17</li>
+          <li>E-mail: suvorova.brs@gmail.com</li>
+          <li>GitHub: SuvorovaSvetlana</li>
+        </ul>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title">education</h2>
+        <p>Belarusian Trade and Economic University of Consumer
+             Cooperation</p>
+      </section>
+      <section class="section" id="summary">
+        <h2 class="section-title">summary</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp; As for me, I think the most important thing in life is to find a way to express yourself.
+         Therefore, I continue to learn and develop myself. In different years I graduated from two universities.
+         I am an economist and logistician by education. Now I work in an insurance company as a manager. 
+         I decided to move on and become a full stack developer. I am learning java, c/c++ and Frontend.</p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">skills</h2>
+        <ul>
+          <li>HTML5, CSS5, Bootstrap</li>
+          <li>Java, C/C++</li>
+          <li>JavaScript basik</li>
+          <li>Git, GitHub</li>
+          <li>VS Code, Sublime Text3</li>
+          <li>Adobe Photoshop, Figma</li>
+        </ul>
+      </section>
+      <section class="section" id="languages">
+        <h2 class="section-title">languages</h2>
+          <ul>
+            <li>English A2</li>
+            <li>Deutsch A1</li>
+            <li>Russian Nativ</li>
+          </ul>
+      </section>
+      <section class="section" id="code">
+        <h2 class="section-title">code</h2>
+        <pre class="my-code">
+          <code>
+            //We have 3 numbers, print them in ascending order let min, max, middle;
+            //min number
+            if (a&lt;b && a&lt;c) {
+                min = a;
+            }else{
+                if (b&lt;a && b&lt;c){ 
+                    min = b;
+                }else{
+                    min = c;
+                }
+            }
+            //max number
+            if (a&gt;b && a&gt;c) {
+                max = a;
+            }else{
+                if (b&gt;a && b&gt;c) {
+                    max = b;
+                }else{
+                    max = c;
+                }
+            }
+            //middle number
+            if (a!=max && a!=min) {
+                middle = a;
+            }else{
+                if (b!=max && b!=min) {
+                    middle = b;
+                }else{
+                    middle = c;
+                }
+            }
+            console.log(min + " , " + middle + " , " + max);
+         </code>
+       </pre>
+      </section>
+      
+   </main>
+   <footer class="footer">
+    <div class="container">
+        <div class="my-footer">
+            <p class="year">&copy;2022</p>
+        </div>
+        <div class="my-footer">
+            <a href="https://www.github.com/suvorovasvetlana/" class="github"><img src="assets/img/github.png" alt="GitHub-logo" width="90" height="90"></a>
+        </div>
+        <div class="my-footer">
+            <a href="https://rs.school/js/" class="corse"><img src="assets/img/rs_school_js.svg" alt="rsschool-logo" width="90" height="90"></a>
+        </div>
+    </div>
+  </footer>
 </body>
 </html>
