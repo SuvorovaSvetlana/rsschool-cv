@@ -28,7 +28,7 @@
    </header>
    <main class="main">
     <section id="profile">
-      <div class="my-foto"></div>
+      <div class="my-foto"><img src="assets/img/foto.jpg" alt="my-foto"></div>
       <div class="my-text">
             <h1 class="section-title">SVETLANA SUVOROVA</h1>
             <hr>
@@ -50,7 +50,7 @@
       </section>
       <section class="section" id="summary">
         <h2 class="section-title">summary</h2>
-        <p>    As for me, I think the most important thing in life is to find a way to express yourself.
+        <p>&nbsp;&nbsp;&nbsp;&nbsp; As for me, I think the most important thing in life is to find a way to express yourself.
          Therefore, I continue to learn and develop myself. In different years I graduated from two universities.
          I am an economist and logistician by education. Now I work in an insurance company as a manager. 
          I decided to move on and become a full stack developer. I am learning java, c/c++ and Frontend.</p>
@@ -76,30 +76,30 @@
       </section>
       <section class="section" id="code">
         <h2 class="section-title">code</h2>
-        <code>
-          <pre class="my-code">
+        <pre class="my-code">
+          <code>
             //We have 3 numbers, print them in ascending order let min, max, middle;
-            //min
-            if (a<b && a<c) {<br>
+            //min number
+            if (a&lt;b && a&lt;c) {
                 min = a;
             }else{
-                if (b<a && b<c){ 
+                if (b&lt;a && b&lt;c){ 
                     min = b;
                 }else{
                     min = c;
                 }
             }
-            //max
-            if (a>b && a>c) {
+            //max number
+            if (a&gt;b && a&gt;c) {
                 max = a;
             }else{
-                if (b>a && b>c) {
+                if (b&gt;a && b&gt;c) {
                     max = b;
                 }else{
                     max = c;
                 }
             }
-            //middle
+            //middle number
             if (a!=max && a!=min) {
                 middle = a;
             }else{
@@ -110,24 +110,23 @@
                 }
             }
             console.log(min + " , " + middle + " , " + max);
-          </pre>
-        </code>
+         </code>
+       </pre>
       </section>
       
    </main>
    <footer class="footer">
     <div class="container">
-        <div>
-            <p>2022</p>
+        <div class="my-footer">
+            <p class="year">&copy;2022</p>
         </div>
-        <div>
-            <a href="#" class="github"></a>
+        <div class="my-footer">
+            <a href="https://www.github.com/suvorovasvetlana/" class="github"><img src="assets/img/github.png" alt="GitHub-logo" width="90" height="90"></a>
         </div>
-        <div>
-            <a href="#" class="corse"></a>
+        <div class="my-footer">
+            <a href="https://rs.school/js/" class="corse"><img src="assets/img/rs_school_js.svg" alt="rsschool-logo" width="90" height="90"></a>
         </div>
     </div>
-   </footer>
- 
+  </footer>
 </body>
 </html>
